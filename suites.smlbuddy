@@ -1,0 +1,1 @@
+{"name":"Homework 2","program":"datatype btree = Empty | Node of int * btree * btree\n\nfun mirror t =\n  case t of\n    Empty => Empty\n  | Node (n, l, r) => Node (n, mirror r, mirror l);\n\ndatatype CONFIG = mirror_type___ of btree;","functionNames":["mirror"]}
